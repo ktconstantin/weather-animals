@@ -1,0 +1,15 @@
+#location-form {
+  display: block;
+}
+
+.state-container {
+  display: none;
+}
+
+#location {
+  display: block;
+}
+
+#location form {
+  display: block;
+}

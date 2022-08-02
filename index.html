@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Windy wind</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <h1>What animal is the wind?</h1>
+      <div class="current-location-display">
+        <div class="display-box">
+          <h4>Current City: <span id="current-city"></span></h4>
+          
+        </div>
+        <div class="display-box">
+          <h4>Current Country: <span id="current-country"></span></h4>
+          
+        </div>
+      </div>
+    </header>
+
+    <section id="location">
+      <form id="location-form">
+        <label for="city">City: </label>
+        <input type="text" name="city" id="city" required pattern="[a-zA-z]+">
+        <label for="country">Country: </label>
+        <select id="country-list" name="country"></select>
+        <div class="state-container">
+          <select id="state-list" name="state"></select>
+        </div>
+        
+        <!-- <input type="submit" value="Submit" id="submit"> -->
+      </form>
+      <button id="submit">Submit</button>
+    </section>
+
+    <section id="weather">
+      <div class="wind-box">
+        <h4>Current wind speed (mph): <span id="wind-speed"></span></h4>
+      </div>
+      <br>
+      <div class="wind-box">
+        <button id="convert-wind-speed">Put it in terms I can understand</button>
+        <div class="wind-box">
+          <h4>Current wind animal: <span id="wind-animal"></span></h4>
+          <div id="current-animal-img"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
